@@ -19,6 +19,8 @@ func main() {
 		desafios.Desafio01()
 	case "2":
 		desafios.Desafio02()
+	case "3":
+		desafios.Desafio03()
 	default:
 		fmt.Println("Desafio não encontrado")
 	}

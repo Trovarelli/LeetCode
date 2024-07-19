@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func solution(partida [2]float64, destino [2]float64) float64 {
+func solution02(partida [2]float64, destino [2]float64) float64 {
 	minY := math.Abs(partida[1] - destino[1])
 	minX := math.Abs(partida[0] - destino[0])
 
@@ -27,5 +27,5 @@ func solution(partida [2]float64, destino [2]float64) float64 {
 func Desafio02() {
 	partida := [2]float64{0.4, 1}
 	destino := [2]float64{0.9, 3}
-	fmt.Printf("O caminho mais curto entre as coordenadas [0.4, 1] e [0.9 e 3] é: %f", solution(partida, destino))
+	fmt.Printf("O caminho mais curto entre as coordenadas [0.4, 1] e [0.9 e 3] é: %f", solution02(partida, destino))
 }
